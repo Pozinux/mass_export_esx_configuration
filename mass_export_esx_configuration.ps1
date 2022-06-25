@@ -18,7 +18,7 @@ $myRootFolder = $scriptPath = split-path -parent $MyInvocation.MyCommand.Definit
 $timestamp = Get-Date -Format "yyyy-MM-dd-HHmm"
 
 
-# Récupération du login neree
+# Récupération du login DOMAIN
 $CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $CurrentUserName = $CurrentUser.split("\")[1]
 
